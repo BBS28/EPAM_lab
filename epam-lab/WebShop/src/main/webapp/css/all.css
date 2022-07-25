@@ -1,0 +1,488 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px/18px "Raleway", sans-serif;
+    color: #707070;
+}
+
+a {
+    color: #26d2fc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+input {
+    font: 18px/22px "Raleway", sans-serif;
+}
+
+.intro {
+    background: url(../images/home.jpg) 50% 0;
+    background-size: cover;
+    height: calc(100vh - 46px);
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.register {
+    background: url(../images/registration.jpg) 50% 0;
+    background-size: cover;
+    height: calc(100vh - 46px);
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.shop {
+    background: url(../images/shop.jpg) 50% 0;
+    background-size: cover;
+    height: calc(100vh - 46px);
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: auto;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+.welcome-box {
+    background: rgba(7, 78, 91, 0.7);
+    padding: 50px 20px 35px;
+    margin-top: 200px;
+    box-shadow: 0px 0px 4px 0px #10023d;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.welcome-box p {
+    color: #f3d423;
+    margin-bottom: 15px;
+}
+
+.welcome-box h1 {
+    color: #f3d423;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+nav.main-nav {
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+nav.main-nav ul {
+    display: flex;
+}
+
+nav.main-nav ul li {
+    margin-left: 4px;
+}
+
+nav.main-nav ul a {
+    display: flex;
+    height: 40px;
+    color: #fff;
+    font-size: 24px;
+    align-items: center;
+    padding: 0 16px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav.main-nav ul a:hover,
+nav.main-nav .active a {
+    background: rgba(8, 85, 100, 0.7);
+    border-radius: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav.main-nav a[type="logo-name"] {
+    color: #ffeda1;
+    font-size: 20px;
+}
+
+nav.main-nav a[type="button"] {
+    background: rgba(253, 62, 7, 0.2);
+    font-size: 12px;
+}
+
+.register-block,
+.shop-block {
+    width: 640px;
+    margin: auto;
+    border-radius: 6px;
+    background: rgba(7, 78, 91, 0.7);
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    overflow-y: auto;
+    padding-bottom: 50px;
+    max-height: calc(100vh - 250px);
+    box-shadow: 0px 0px 4px 0px #10023d;
+}
+
+.register-block h1 {
+    color: #f3d423;
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.form-row {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.reg-form label {
+    font-size: 16px;
+    display: block;
+    color: #f3d423;
+    margin-bottom: 6px;
+}
+
+.reg-form input[type="text"],
+.reg-form input[type="password"] {
+    border: 1px solid #333;
+    border-radius: 3px;
+    height: 32px;
+    width: 100%;
+    padding: 0 14px;
+    margin: 0;
+}
+
+.reg-form input[type="text"]:focus-visible,
+.reg-form input[type="password"]:focus-visible {
+    border: 1px solid #26d2fc;
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    height: 32px;
+    text-transform: uppercase;
+    background: #1e9448;
+    border: none;
+}
+
+.shop-block {
+    width: 940px;
+    padding-top: 30px;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.shop-block h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 270px;
+    height: 350px;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+.product-item:hover {
+    box-shadow: 0px 0px 4px 0px #10023d;
+}
+
+.name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.name-price span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.name-price em {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.old-price {
+    font-size: 14px;
+    color: #e24602;
+    text-decoration: line-through;
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pager {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.pager li {
+    padding: 0 14px;
+}
+
+.error {
+    color: #ffa8a8;
+}
+
+.inform {
+    color: #b0f302;
+}
+
+.inform-no-product {
+    color: indigo;
+}
+
+.footer {
+    height: 46px;
+    background: #333;
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+}
+
+.form-login {
+    width: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.login-bar {
+    /*height: 25px;*/
+    font-size: 12px;
+    width: 60px;
+    border: darkslategray;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.login-btn {
+    font-size: 12px;
+    text-align: center;
+    height: 28px;
+    text-transform: uppercase;
+    background: #1e9448;
+    border: none;
+    border-radius: 15px;
+}
+
+.logout-btn {
+    font-size: 12px;
+    text-align: center;
+    height: 28px;
+    text-transform: uppercase;
+    background: #fc2929;
+    border: none;
+    border-radius: 15px;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 20px;
+}
+
+.form-sort {
+    padding-bottom: 10px;
+}
+
+.form-filter {
+    width: 250px;
+    padding-top: 200px;
+    background: rgba(227, 210, 142, 0.5);
+    color: black;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.form-filter input[type="text"],
+.form-filter input[type="number"],
+.form-filter select {
+    width: 100%;
+    font: 14px/18px "Raleway", sans-serif;
+    color: #707070;
+    height: 24px;
+
+}
+
+.prod-price{
+    color: #143118;
+    text-shadow: 1px 1px 1px rgba(8, 85, 100, 0.7);
+}
+
+.prod-name{
+    color: #3406c5;
+}
+
+.filter-form-row {
+    margin-bottom: 16px;
+}
+
+.form-sort form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+}
+
+.form-sort form span {
+    float: left;
+    padding-top: 1px;
+    padding-right: 8px;
+}
+
+.inputfile-box {
+    position: relative;
+}
+
+.inputfile {
+    display: none;
+}
+
+.container {
+    display: inline-block;
+    width: 100%;
+}
+
+.file-box {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid;
+    padding: 5px 0px 5px 5px;
+    box-sizing: border-box;
+    height: calc(2rem - 2px);
+}
+
+.file-button {
+    background: red;
+    padding: 5px;
+    position: absolute;
+    border: 1px solid;
+    top: 0px;
+    right: 0px;
+}
+
+.cart-table {
+    color: #f3d423;
+}
+
+.cart-table-head {
+    color: #ff7300;
+}
+
+.cart-total {
+    color: #ff7300;
+    font-size: 21px;
+    text-align: right;
+    margin-right: 8em;
+
+}
+
+.cart-number {
+    width: 50px;
+    background: #ffeda1;
+}
+
+.cart-clear {
+    text-align: right;
+    margin-right: 1em;
+}
+
+.clear-btn {
+    background-color: #f34343;
+    border: none;
+    color: white;
+    padding: 3px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cart-message {
+    color: #f3d423;
+    text-align: center;
+}
+
+.order-btn {
+    background-color: #143118;
+    border: black;
+    color: #f3d423;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.order-pos {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.sign-in {
+    color: #ff7300;
+    font-size: 18px;
+}
+
+.add-btn {
+    background-color: rgb(243, 212, 35);
+    color: #3406c5;
+    border-radius: 5px;
+}
+
+#img {
+    filter: drop-shadow(1px 1px 1px rgba(203, 217, 241, 0.55));
+}
+
+.locale-switcher {
+    background-color: #f3d423;
+    color: #3406c5;
+    height: 27px;
+    border-radius: 15px;
+}
+
+.admin-ref {
+    text-align: right;
+    float:right;
+}

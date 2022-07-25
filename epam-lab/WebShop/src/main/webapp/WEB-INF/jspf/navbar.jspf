@@ -1,0 +1,20 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<fmt:setBundle basename="locale"/>
+<nav class="main-nav">
+    <ul>
+        <li><a href="home"><fmt:message key="home"/></a></li>
+        <li><a href="userRegistration"><fmt:message key="register"/></a></li>
+        <li><a href="products"><fmt:message key="shop"/></a></li>
+        <li><a href="cart" id="cart_link">
+            <fmt:message key="cart"/><c:if
+                test="${sessionScope.cart.orderedProductsList != null && not empty sessionScope.cart.orderedProductsList}">
+            (${sessionScope.cart.allProductsAmount})
+        </c:if>
+        </a></li>
+        <tgcp:login/>
+        <li class="locale-switcher"><tglc:LocaleTag localeName="${empty sessionScope.locale ? cookie.locale.value : sessionScope.locale}" url="${requestScope.url}"/></li>
+    </ul>
+</nav>
+<a href="home">
+    <span class="logo"><img id="img" src="images/logo.png" alt="Power Tools"/></span>
+</a>

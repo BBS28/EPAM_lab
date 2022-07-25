@@ -1,0 +1,2 @@
+<%@ taglib prefix="tgcp" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="tglc" uri="/WEB-INF/tld/locale-descriptor.tld" %>

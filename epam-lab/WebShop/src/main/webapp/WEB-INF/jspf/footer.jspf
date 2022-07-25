@@ -1,0 +1,6 @@
+<footer class="footer">
+    <div class="wrapper">
+        <label>Power Tools &copy; 2022</label>
+        <label class="admin-ref"><a href="admin"><fmt:message key="administrator"/></a></label>
+    </div>
+</footer>

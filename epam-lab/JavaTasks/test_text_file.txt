@@ -1,0 +1,6 @@
+first line
+this is second
+    The third;
+fourth
+THE LAST ONE!
+и еще одна строка на русском

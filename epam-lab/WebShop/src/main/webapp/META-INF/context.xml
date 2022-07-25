@@ -1,0 +1,13 @@
+<Context>
+    <Resource name="jdbc/PT_shop_db"
+              auth="Container"
+              type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+              username=""
+              password=""
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              defaultAutoCommit="false"
+              defaultTransactionIsolation="READ_COMMITTED"
+              connectionProperties="useUnicode=yes;characterEncoding=utf8;"
+              url="jdbc:mysql://localhost:3306/ptshop?serverTimezone=UTC"/>
+</Context>

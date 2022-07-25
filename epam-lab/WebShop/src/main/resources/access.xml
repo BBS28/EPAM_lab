@@ -1,0 +1,18 @@
+<security>
+    <constraint>
+        <url>/cart</url>
+        <role>user</role>
+    </constraint>
+    <constraint>
+        <url>/createdOrder</url>
+        <role>user</role>
+    </constraint>
+    <constraint>
+        <url>/order</url>
+        <role>user</role>
+    </constraint>
+    <constraint>
+        <url>/admin</url>
+        <role>admin</role>
+    </constraint>
+</security>
